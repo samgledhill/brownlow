@@ -35,14 +35,10 @@ fixture <- fromJSON("https://fixturedownload.com/feed/json/afl-2024")
 teams <- fixture %>%
   distinct(HomeTeam)
 
+## Get player details for all teams
+
+# First craete team list of all teams in a format that can be scraped (names separated by hyphens)
+
+write_csv2(teams, "teams.csv")
 
 
-
-
-players <- read_html("https://www.footywire.com/afl/footy/tp-hawthorn-hawks")
-
-players %>%
-  html_elements(xpath = '//*[@id="team-players-div"]/table') %>%
-  html_table(header = TRUE) %>%
-  .[[1]] %>%
-  clean_names()
