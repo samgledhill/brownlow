@@ -37,8 +37,5 @@ teams <- fixture %>%
 
 ## Get player details for all teams
 
-# First craete team list of all teams in a format that can be scraped (names separated by hyphens)
-
-write_csv2(teams, "teams.csv")
-
+team_names <- read_csv("teams.csv")
 

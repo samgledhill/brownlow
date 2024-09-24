@@ -1,0 +1,12 @@
+name: brownlow_medal
+title: brownlow_medal
+username: samgledhill
+account: samgledhill
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 12690097
+bundleId: 9116213
+url: https://samgledhill.shinyapps.io/brownlow_medal/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
